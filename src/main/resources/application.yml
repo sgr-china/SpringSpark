@@ -1,0 +1,19 @@
+server:
+  port: 30001
+  tomcat:
+    max-threads: 250
+  compression:
+    enabled: true
+
+spark:
+  app:
+    name: SpringSpark
+  master:
+    uri: local[*]
+  driver:
+    memory: 1g
+  executor:
+    cores: 1
+    memory: 1g
+  num:
+    executors: 1
